@@ -24,129 +24,129 @@ function nen() {
 
   q1.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 0; s += -1; c += 0; t += -1; }
+      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += -1; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += -1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 0; }
-      if (input.value == 4) { f += -1; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 2; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 4) { f += -1; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 2; s += 0; c += 2; t += 2; }
     }
   });
 
   q2.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 0; s += -1; c += 0; t += -1; }
+      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += -1; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += -1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 0; }
-      if (input.value == 4) { f += -1; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 2; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 4) { f += -1; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 2; s += 0; c += 2; t += 2; }
     }
   });
 
   q3.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 1; s += 0; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 1; m += 0; s += 2; c += 1; t += 2; }
+      if (input.value == 1) { f += 3; e += 1; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 2) { f += 2; e += 1; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 0; s += 1; c += 1; t += 2; }
     }
   });
 
   q4.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 1; s += 0; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 1; m += 0; s += 2; c += 1; t += 2; }
+      if (input.value == 1) { f += 3; e += 1; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 2) { f += 2; e += 1; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 0; s += 1; c += 1; t += 2; }
     }
   });
 
   q5.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 2; m += -1; s += -1; c += 0; t += 1; }
+      if (input.value == 1) { f += 1; e += 3; m += -1; s += -1; c += 0; t += 2; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 5) { f += 0; e += -1; m += 2; s += 2; c += 2; t += -1; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 0; }
+      if (input.value == 5) { f += 0; e += 0; m += 2; s += 2; c += 3; t += -1; }
     }
   });
 
   q6.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 2; m += -1; s += -1; c += 0; t += 1; }
+      if (input.value == 1) { f += 1; e += 3; m += -1; s += -1; c += 0; t += 2; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 5) { f += 0; e += -1; m += 2; s += 2; c += 2; t += -1; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 0; }
+      if (input.value == 5) { f += 0; e += 0; m += 2; s += 2; c += 3; t += -1; }
     }
   });
 
   q7.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 0; s += -1; c += 0; t += 1; }
+      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += 1; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 2; c += 2; t += 1; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 1; }
     }
   });
 
   q8.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 0; s += -1; c += 0; t += 1; }
+      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += 1; }
       if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 2; c += 2; t += 1; }
+      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 1; }
     }
   });
 
   q9.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 2; s += 0; c += 0; t += -1; }
+      if (input.value == 1) { f += 2; e += 1; m += 3; s += 0; c += 0; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += 0; m += -1; s += 2; c += 1; t += 2; }
     }
   });
 
   q10.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 2; s += 0; c += 0; t += -1; }
+      if (input.value == 1) { f += 2; e += 1; m += 3; s += 0; c += 0; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += 0; m += -1; s += 2; c += 1; t += 2; }
     }
   });
 
   q11.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 0; m += 1; s += -1; c += 1; t += 0; }
+      if (input.value == 1) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 3; }
     }
   });
 
   q12.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 0; m += 1; s += -1; c += 1; t += 0; }
+      if (input.value == 1) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 3; }
     }
   });
 
   q13.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += -1; m += 2; s += 1; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
+      if (input.value == 1) { f += 2; e += -1; m += 3; s += 0; c += 0; t += -1; }
+      if (input.value == 2) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
       if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
       if (input.value == 5) { f += -1; e += 2; m += -1; s += 0; c += 1; t += 2; }
     }
@@ -154,9 +154,9 @@ function nen() {
 
   q14.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += -1; m += 2; s += 1; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 0; m += 1; s += 1; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
+      if (input.value == 1) { f += 2; e += -1; m += 3; s += 0; c += 0; t += -1; }
+      if (input.value == 2) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
       if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
       if (input.value == 5) { f += -1; e += 2; m += -1; s += 0; c += 1; t += 2; }
     }
@@ -164,61 +164,61 @@ function nen() {
 
   q15.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 2; m += 1; s += -1; c += 0; t += 0; }
+      if (input.value == 1) { f += 1; e += 3; m += 1; s += -1; c += 0; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += -1; m += 1; s += 2; c += 1; t += 1; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += -1; m += 2; s += 1; c += 1; t += 2; }
     }
   });
 
   q16.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 1; e += 2; m += 1; s += -1; c += 0; t += 0; }
+      if (input.value == 1) { f += 1; e += 3; m += 1; s += -1; c += 0; t += 0; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += -1; m += 1; s += 2; c += 1; t += 1; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 5) { f += 0; e += -1; m += 2; s += 1; c += 1; t += 2; }
     }
   });
 
   q17.forEach((input) => {
     if (input.checked) {
       if (input.value == 1) { f += 1; e += 1; m += 2; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 0; t += 1; }
-      if (input.value == 5) { f += 2; e += 1; m += -1; s += 1; c += 0; t += 2; }
+      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
+      if (input.value == 5) { f += 3; e += 1; m += -1; s += 1; c += 0; t += 2; }
     }
   });
 
   q18.forEach((input) => {
     if (input.checked) {
       if (input.value == 1) { f += 1; e += 1; m += 2; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 0; t += 1; }
-      if (input.value == 5) { f += 2; e += 1; m += -1; s += 1; c += 0; t += 2; }
+      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
+      if (input.value == 5) { f += 3; e += 1; m += -1; s += 1; c += 0; t += 2; }
     }
   });
 
   q19.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 0; }
+      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 1; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 0; t += 1; }
-      if (input.value == 5) { f += -1; e += 1; m += -1; s += 0; c += -1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += -1; s += 0; c += -1; t += 3; }
     }
   });
 
   q20.forEach((input) => {
     if (input.checked) {
-      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 0; }
+      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 1; }
       if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 1; c += 0; t += 1; }
-      if (input.value == 5) { f += -1; e += 1; m += -1; s += 0; c += -1; t += 2; }
+      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
+      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
+      if (input.value == 5) { f += -1; e += 0; m += -1; s += 0; c += -1; t += 3; }
     }
   });
 
@@ -280,8 +280,9 @@ function nen() {
 
   const resultado = desempatarPorHexagono(f, e, m, c, s, t);
 
+  f = 0; e = 0; m = 0; c = 0; s = 0; t = 0;
   const copo = document.querySelector("#copo");
-  const texto = document.querySelector("#resultado");
+  const texto = document.getElementById("#resultado");
   copo.classList.remove(
     "fortificador",
     "emissor",
@@ -293,5 +294,4 @@ function nen() {
   copo.classList.add(resultado.toLowerCase());
   texto.textContent = "Seu tipo é: " + resultado;
 
-  f = 0; e = 0; m = 0; c = 0; s = 0; t = 0;
 }

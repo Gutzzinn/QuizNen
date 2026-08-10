@@ -1,0 +1,435 @@
+@font-face {
+    font-family: quest;
+    src: url("fonteq.ttf");
+}
+legend{
+    text-align: center;
+    font-family: quest;
+}
+fieldset{
+    margin-top: 5%;
+    border: 1px black solid;
+    border-radius: 4px;
+    background-color: rgb(231, 241, 184);
+    width: 85%;
+    
+}
+.tt{
+    text-align: center;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cx{
+    display: inline;
+    position: relative;
+}
+input{
+    visibility: hidden;
+}
+.caxa:has(input:checked) {
+    background-color: rgb(12, 250, 103);
+
+}
+.caxa {
+    display: block;
+    cursor: pointer;
+    border: solid 1px black;
+    border-radius: 4px;
+    background-color: rgb(255, 249, 178);
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 8%;
+    transition: scale 2s;
+    transition: box-shadow 4s;
+    transition: background-color 1.2s;
+    min-height: 4vh;
+    max-width: 70vw;
+    text-align: center;
+}
+@media only screen and (max-width: 540px)
+{
+.caxa {
+    display: block;
+    cursor: pointer;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 4px;
+    background-color: rgb(255, 249, 178);
+    margin-bottom: 4px;
+    margin-top: 4px;
+    margin-left: 1%;
+    transition: scale 2s;
+    transition: box-shadow 4s;
+    transition: background-color 1.2s;
+    min-height: 4vh;
+    max-width: 98vw;
+}
+}
+.caxa:hover{
+   scale: 101%;
+   box-shadow: 2px 2px rgb(0, 0, 0);
+   background-color: rgb(98, 252, 178);
+}
+.hd{
+    text-align: center;
+    /*background-color: rgb(222, 255, 165);*/
+    background-image: linear-gradient(to left, rgb(204, 251, 204), rgb(239, 255, 188));
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    box-shadow: 3px 3px rgb(208, 255, 211);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 255, 191);
+}
+header h1 {
+margin-top: 0;
+font-family: quest;
+}
+.nv{
+    background-color: rgb(231, 255, 215);
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: solid 4px rgb(202, 255, 164);
+}
+a{
+    color: #320101;
+}
+a:hover{
+    color: rgb(2, 107, 14);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#e{
+    margin-top: 40px;
+    width: 40%;
+    color: rgb(0, 0, 0);
+    background-color: rgb(241, 252, 123);
+    border: solid 2px rgb(255, 255, 84);
+    box-shadow: #4a4f01 2px 2px;
+    border-radius: 5px;
+    height: 4vh;
+    transition: scale 0.3s;
+}
+#e:hover{
+    scale: 104%;
+}
+#e:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+.teste-copo {
+    width: 100%;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+}
+
+.copo {
+    position: relative;
+
+    width: 180px;
+    height: 260px;
+
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    border-top: none;
+
+    border-radius: 0 0 35px 35px;
+
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.15),
+        0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+.borda {
+    position: absolute;
+
+    top: 0;
+    left: -5px;
+
+    width: calc(100% + 10px);
+    height: 18px;
+
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    box-sizing: border-box;
+}
+
+.agua {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 70%;
+
+    background: rgba(50, 150, 255, 0.45);
+
+    border-radius: 0 0 30px 30px;
+
+    transition:
+        height 1s ease,
+        transform 1s ease,
+        border-radius 1s ease;
+}
+.folha {
+    position: absolute;
+
+    top: 15%;
+    left: 50%;
+
+    font-size: 32px;
+
+    transform: translate(-50%, -50%) rotate(-10deg);
+
+    z-index: 2;
+
+    transition: transform 0.5s ease;
+}
+/* =========================
+   FORTIFICADOR
+   ========================= */
+
+#copo.fortificador .agua {
+    height: 115%;
+    animation: transbordar 1.5s ease-in forwards;
+}
+
+#copo.fortificador {
+    overflow: visible;
+}
+
+@keyframes transbordar {
+    0% {
+        height: 70%;
+    }
+
+    100% {
+        height: 115%;
+    }
+}
+
+
+/* =========================
+   EMISSOR
+   ========================= */
+
+#copo.emissor .agua {
+    animation: mudarCor 2s ease-in-out forwards;
+}
+
+@keyframes mudarCor {
+    0% {
+        background: rgba(50, 150, 255, 0.45);
+    }
+
+    100% {
+        background: rgba(120, 255, 100, 0.6);
+    }
+}
+
+
+/* =========================
+   MANIPULADOR
+   ========================= */
+
+#copo.manipulador .folha {
+    animation: mexerFolha 1s ease-in-out infinite alternate;
+}
+
+@keyframes mexerFolha {
+    0% {
+        transform: translate(-50%, -50%) rotate(-15deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(15deg);
+    }
+}
+
+
+/* =========================
+   ESPECIALISTA
+   ========================= */
+
+#copo.especialista .agua {
+    animation: desaparecerAgua 1.5s ease forwards;
+}
+
+@keyframes desaparecerAgua {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+
+/* =========================
+   CONJURADOR
+   ========================= */
+
+.planta {
+    position: absolute;
+
+    left: 50%;
+    bottom: 15px;
+
+    width: 40px;
+    height: 100px;
+
+    transform: translateX(-50%) scale(0);
+
+    transform-origin: bottom;
+
+    z-index: 3;
+}
+
+#copo.conjurador .planta {
+    animation: nascerPlanta 2s ease-out forwards;
+}
+
+.caule {
+    position: absolute;
+
+    left: 18px;
+    bottom: 0;
+
+    width: 5px;
+    height: 75px;
+
+    background: #4b8f45;
+    border-radius: 5px;
+}
+
+.folha-esquerda,
+.folha-direita {
+    position: absolute;
+
+    width: 30px;
+    height: 16px;
+
+    background: #63a85b;
+
+    border-radius: 100% 0 100% 0;
+}
+
+.folha-esquerda {
+    left: -5px;
+    top: 30px;
+    transform: rotate(-30deg);
+}
+
+.folha-direita {
+    right: -5px;
+    top: 15px;
+    transform: rotate(30deg);
+}
+
+@keyframes nascerPlanta {
+    0% {
+        transform: translateX(-50%) scale(0);
+    }
+
+    70% {
+        transform: translateX(-50%) scale(1.1);
+    }
+
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+
+/* =========================
+   TRANSMUTADOR
+   ========================= */
+
+.bolhas {
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+}
+
+.bolhas span {
+    position: absolute;
+
+    bottom: -10px;
+
+    width: 8px;
+    height: 8px;
+
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+
+    opacity: 0;
+}
+
+#copo.transmutador .bolhas span {
+    animation: bolha 2s ease-in infinite;
+}
+
+.bolhas span:nth-child(1) {
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.bolhas span:nth-child(2) {
+    left: 45%;
+    animation-delay: 0.5s;
+}
+
+.bolhas span:nth-child(3) {
+    left: 65%;
+    animation-delay: 1s;
+}
+
+.bolhas span:nth-child(4) {
+    left: 80%;
+    animation-delay: 1.5s;
+}
+
+@keyframes bolha {
+    0% {
+        bottom: -10px;
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 100%;
+        opacity: 0;
+        transform: scale(1.2);
+    }
+}

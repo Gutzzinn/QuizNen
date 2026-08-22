@@ -1,4 +1,4 @@
-let f = 0, t = 0, e = 0, c = 0, m = 0, s = 0;
+let f = 1, t = 1, e = 1, c = 1, m = 1, s = 1;
 
 function nen() {
   q1 = document.querySelectorAll('input[name="q1"]');
@@ -11,227 +11,106 @@ function nen() {
   q8 = document.querySelectorAll('input[name="q8"]');
   q9 = document.querySelectorAll('input[name="q9"]');
   q10 = document.querySelectorAll('input[name="q10"]');
-  q11 = document.querySelectorAll('input[name="q11"]');
-  q12 = document.querySelectorAll('input[name="q12"]');
-  q13 = document.querySelectorAll('input[name="q13"]');
-  q14 = document.querySelectorAll('input[name="q14"]');
-  q15 = document.querySelectorAll('input[name="q15"]');
-  q16 = document.querySelectorAll('input[name="q16"]');
-  q17 = document.querySelectorAll('input[name="q17"]');
-  q18 = document.querySelectorAll('input[name="q18"]');
-  q19 = document.querySelectorAll('input[name="q19"]');
-  q20 = document.querySelectorAll('input[name="q20"]');
+  
+q1.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.2; e *= 1.2; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 2) { f *= 1.1; e *= 1.1; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 1.0; m *= 0.9; s *= 0.9; c *= 0.9; t *= 1.0; }
+    if (input.value == 5) { f *= 1.0; e *= 1.0; m *= 0.8; s *= 0.9; c *= 0.8; t *= 1.0; }
+  }
+});
 
-  q1.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += -1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 4) { f += -1; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 0; c += 2; t += 2; }
-    }
-  });
+q2.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.2; e *= 1.0; m *= 1.2; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 2) { f *= 1.1; e *= 1.0; m *= 1.1; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 0.9; m *= 1.0; s *= 0.9; c *= 1.0; t *= 0.9; }
+    if (input.value == 5) { f *= 1.0; e *= 0.8; m *= 1.0; s *= 0.9; c *= 1.0; t *= 0.8; }
+  }
+});
 
-  q2.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += -1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 4) { f += -1; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 0; c += 2; t += 2; }
-    }
-  });
+q3.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.2; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.2; t *= 1.0; }
+    if (input.value == 2) { f *= 1.1; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.1; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 1.0; m *= 0.9; s *= 0.9; c *= 1.0; t *= 0.9; }
+    if (input.value == 5) { f *= 1.0; e *= 1.0; m *= 0.8; s *= 0.9; c *= 1.0; t *= 0.8; }
+  }
+});
 
-  q3.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 2) { f += 2; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 0; s += 1; c += 1; t += 2; }
-    }
-  });
+q4.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.2; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.2; }
+    if (input.value == 2) { f *= 1.1; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.1; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 0.9; m *= 1.0; s *= 0.9; c *= 0.9; t *= 1.0; }
+    if (input.value == 5) { f *= 1.0; e *= 0.8; m *= 1.0; s *= 0.9; c *= 0.8; t *= 1.0; }
+  }
+});
 
-  q4.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 2) { f += 2; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 0; s += 1; c += 1; t += 2; }
-    }
-  });
+q5.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.2; m *= 1.2; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 2) { f *= 1.0; e *= 1.1; m *= 1.1; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 0.9; e *= 1.0; m *= 1.0; s *= 0.9; c *= 0.9; t *= 1.0; }
+    if (input.value == 5) { f *= 0.8; e *= 1.0; m *= 1.0; s *= 0.9; c *= 0.8; t *= 1.0; }
+  }
+});
 
-  q5.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 3; m += -1; s += -1; c += 0; t += 2; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 5) { f += 0; e += 0; m += 2; s += 2; c += 3; t += -1; }
-    }
-  });
+q6.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.2; m *= 1.0; s *= 0.9; c *= 1.2; t *= 1.0; }
+    if (input.value == 2) { f *= 1.0; e *= 1.1; m *= 1.0; s *= 0.9; c *= 1.1; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 1.0; m *= 0.9; s *= 0.9; c *= 1.0; t *= 0.9; }
+    if (input.value == 5) { f *= 1.0; e *= 1.0; m *= 0.8; s *= 0.9; c *= 1.0; t *= 0.8; }
+  }
+});
 
-  q6.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 3; m += -1; s += -1; c += 0; t += 2; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 5) { f += 0; e += 0; m += 2; s += 2; c += 3; t += -1; }
-    }
-  });
+q7.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.2; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.2; }
+    if (input.value == 2) { f *= 1.0; e *= 1.1; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.1; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 0.9; e *= 1.0; m *= 0.9; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 5) { f *= 0.8; e *= 1.0; m *= 0.8; s *= 0.9; c *= 1.0; t *= 1.0; }
+  }
+});
 
-  q7.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += 1; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 1; }
-    }
-  });
+q8.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.0; m *= 1.2; s *= 0.9; c *= 1.2; t *= 1.0; }
+    if (input.value == 2) { f *= 1.0; e *= 1.0; m *= 1.1; s *= 0.9; c *= 1.1; t *= 1.0; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 0.9; m *= 1.0; s *= 0.9; c *= 1.0; t *= 0.9; }
+    if (input.value == 5) { f *= 1.0; e *= 0.8; m *= 1.0; s *= 0.9; c *= 1.0; t *= 0.8; }
+  }
+});
 
-  q8.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 3; e += 1; m += 0; s += -1; c += 0; t += 1; }
-      if (input.value == 2) { f += 1; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 3) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += 2; s += 1; c += 2; t += 1; }
-    }
-  });
+q9.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.0; m *= 1.2; s *= 0.9; c *= 1.0; t *= 1.2; }
+    if (input.value == 2) { f *= 1.0; e *= 1.0; m *= 1.1; s *= 0.9; c *= 1.0; t *= 1.1; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 0.9; e *= 1.0; m *= 1.0; s *= 0.9; c *= 0.9; t *= 1.0; }
+    if (input.value == 5) { f *= 0.8; e *= 1.0; m *= 1.0; s *= 0.9; c *= 0.8; t *= 1.0; }
+  }
+});
 
-  q9.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 3; s += 0; c += 0; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 0; m += -1; s += 2; c += 1; t += 2; }
-    }
-  });
-
-  q10.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += 1; m += 3; s += 0; c += 0; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 0; m += -1; s += 2; c += 1; t += 2; }
-    }
-  });
-
-  q11.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 3; }
-    }
-  });
-
-  q12.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 0; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += 1; m += -1; s += 2; c += 1; t += 3; }
-    }
-  });
-
-  q13.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += -1; m += 3; s += 0; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 2; m += -1; s += 0; c += 1; t += 2; }
-    }
-  });
-
-  q14.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += -1; m += 3; s += 0; c += 0; t += -1; }
-      if (input.value == 2) { f += 1; e += 0; m += 1; s += 0; c += 0; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 1; m += 0; s += 1; c += 1; t += 1; }
-      if (input.value == 5) { f += -1; e += 2; m += -1; s += 0; c += 1; t += 2; }
-    }
-  });
-
-  q15.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 3; m += 1; s += -1; c += 0; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += -1; m += 2; s += 1; c += 1; t += 2; }
-    }
-  });
-
-  q16.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 3; m += 1; s += -1; c += 0; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 0; t += 1; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 0; e += 0; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 5) { f += 0; e += -1; m += 2; s += 1; c += 1; t += 2; }
-    }
-  });
-
-  q17.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 1; m += 2; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 5) { f += 3; e += 1; m += -1; s += 1; c += 0; t += 2; }
-    }
-  });
-
-  q18.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 1; e += 1; m += 2; s += 0; c += 1; t += 0; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 5) { f += 3; e += 1; m += -1; s += 1; c += 0; t += 2; }
-    }
-  });
-
-  q19.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 1; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += -1; s += 0; c += -1; t += 3; }
-    }
-  });
-
-  q20.forEach((input) => {
-    if (input.checked) {
-      if (input.value == 1) { f += 2; e += 0; m += 2; s += 1; c += 1; t += 1; }
-      if (input.value == 2) { f += 1; e += 1; m += 1; s += 1; c += 1; t += 0; }
-      if (input.value == 3) { f += 1; e += 1; m += 1; s += 0; c += 1; t += 1; }
-      if (input.value == 4) { f += 1; e += 1; m += 0; s += 0; c += 0; t += 1; }
-      if (input.value == 5) { f += -1; e += 0; m += -1; s += 0; c += -1; t += 3; }
-    }
-  });
-
-  console.log("F, E, M, S, C, T = " + f + " " + e + " " + m + " " + s + " " + c + " " + t);
-
-  const afinidades = {
-    F: { F: 1.00, T: 0.80, C: 0.60, S: 0.00, M: 0.40, E: 0.80 },
-    T: { F: 0.80, T: 1.00, C: 0.80, S: 0.60, M: 0.00, E: 0.40 },
-    C: { F: 0.60, T: 0.80, C: 1.00, S: 0.80, M: 0.60, E: 0.00 },
-    S: { F: 0.00, T: 0.60, C: 0.80, S: 1.00, M: 0.80, E: 0.60 },
-    M: { F: 0.40, T: 0.00, C: 0.60, S: 0.80, M: 1.00, E: 0.80 },
-    E: { F: 0.80, T: 0.40, C: 0.00, S: 0.60, M: 0.80, E: 1.00 }
-  };
+q10.forEach((input) => {
+  if (input.checked) {
+    if (input.value == 1) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.2; t *= 1.2; }
+    if (input.value == 2) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.1; t *= 1.1; }
+    if (input.value == 3) { f *= 1.0; e *= 1.0; m *= 1.0; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 4) { f *= 1.0; e *= 0.9; m *= 0.9; s *= 0.9; c *= 1.0; t *= 1.0; }
+    if (input.value == 5) { f *= 1.0; e *= 0.8; m *= 0.8; s *= 0.9; c *= 1.0; t *= 1.0; }
+  }
+});
 
   const nomes = {
     F: "Fortificador",
@@ -279,19 +158,16 @@ function nen() {
   }
 
   const resultado = desempatarPorHexagono(f, e, m, c, s, t);
+  console.log("Valores finais:");
+  console.log(`Fortificador (F): ${f.toFixed(4)}`);
+  console.log(`Emissor (E): ${e.toFixed(4)}`);
+  console.log(`Manipulador (M): ${m.toFixed(4)}`);
+  console.log(`Conjurador (C): ${c.toFixed(4)}`);
+  console.log(`Transmutador (T): ${t.toFixed(4)}`);
+  console.log(`Especialista (S): ${s.toFixed(4)}`);
+  f = 1, t = 1, e = 1, c = 1, m = 1, s = 1;
 
-  f = 0; e = 0; m = 0; c = 0; s = 0; t = 0;
-  const copo = document.querySelector("#copo");
-  const texto = document.getElementById("#resultado");
-  copo.classList.remove(
-    "fortificador",
-    "emissor",
-    "manipulador",
-    "especialista",
-    "conjurador",
-    "transmutador"
-  );
-  copo.classList.add(resultado.toLowerCase());
+  let texto = document.getElementById("Resultado");
   texto.textContent = "Seu tipo é: " + resultado;
 
 }

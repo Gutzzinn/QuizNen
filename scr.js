@@ -1,5 +1,5 @@
 
-Scr · JS
+
 let f = 1, t = 1, e = 1, c = 1, m = 1, s = 1;
  
 // Afinidades entre os tipos no hexágono do Nen (usadas no desempate).
